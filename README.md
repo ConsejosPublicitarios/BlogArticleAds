@@ -1,2 +1,7 @@
-# BlogArticleAds
-Colocar anuncios en los artículos
+<div id='jobmiddlenew'> 
+<data:post.body/> </div> 
+<b:if cond='data:blog.pageType == &quot;item&quot;'> 
+<style> #addcodemiddle{display: none;} </style> 
+<div id='addcodemiddle'> SUSTITUIR ESTE TEXTO POR EL CÓDIGO DEL ANUNCIO
+<script type='text/javascript'> var str1=document.getElementById(&quot;jobmiddlenew&quot;).innerHTML; var str2=str1.length; var str3=str2/2; var substr = str1.substring(str3, str2); var n = substr.search(&quot;&lt;br&gt;&quot;); if(n&lt;0) { n = substr.indexOf(&#39;.&#39;); if(n&lt;0) { n=0; } var firsthalf = str1.substring(0, str3+n+1); var secondhalf = str1.substring(str3+n+1, str2); } else { var firsthalf = str1.substring(0, str3+n+4); var secondhalf = str1.substring(str3+n+4, str2); } var addcode=&quot;<center>&quot;+document.getElementById(&quot;addcodemiddle&quot;).innerHTML+&quot;</center><br/>&quot;; var newbody=firsthalf+addcode+secondhalf; var strnew=document.getElementsByClassName(&quot;post-body entry-content&quot;); strnew[0].innerHTML=newbody; document.getElementById(&quot;addcodemiddle&quot;).innerHTML=&quot;&quot;; </script> </div>
+</b:if>
