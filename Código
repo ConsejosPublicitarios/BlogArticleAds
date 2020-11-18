@@ -1,3 +1,8 @@
+Cómo insertar anuncios dentro de los artículos del blog. 
+Más información: https://consejos-publicitarios.blogspot.com/2020/11/como-insertar-anuncios-articulos-blog.html
+
+Copiar y pegar el siguiente código dentro del "Body" de tu blog (sustituir el texto indicado por el código del anuncio): 
+
 <div id='jobmiddlenew'> 
 <data:post.body/> </div> 
 <b:if cond='data:blog.pageType == &quot;item&quot;'> 
